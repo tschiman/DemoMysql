@@ -1,0 +1,16 @@
+#Database Connections
+spring.datasource.url=
+spring.datasource.driver-class-name=com.mysql.jdbc.Driver
+spring.datasource.username=
+spring.datasource.password=
+
+db.driver= ${spring.datasource.driver-class-name}
+db.url= ${spring.datasource.url}
+db.username=${spring.datasource.username}
+db.password=${spring.datasource.password}
+
+# Hibernate
+hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
+hibernate.show_sql: true
+hibernate.hbm2ddl.auto: create
+entitymanager.packagesToScan=demo
