@@ -49,7 +49,11 @@ public class UserController {
     public String create(String email, String name) {
         try {
             User user = new User(email, name);
+            User user1 = new User("test", "tester");
+            User user2 = new User("tes2t", "tester2");
             _userDao.save(user);
+            _userDao.save(user1);
+            _userDao.save(user2);
         }
         catch(Exception ex) {
             return ex.getMessage();
